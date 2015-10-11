@@ -5,16 +5,7 @@
   "name": "SettingsCenter", 
   "original-author": "Xes, l300lvl", 
   "shell-version": [
-    "3.4", 
-    "3.6", 
-    "3.5.4", 
-    "3.8", 
-    "3.10", 
-    "3.12", 
-    "3.14", 
-    "3.16", 
-    "3.15.91", 
-    "3.15.92"
+    "3.18", 
   ], 
   "url": "https://github.com/l300lvl/XES-Settings-Center-Extension", 
   "uuid": "SettingsCenter@xesnet.fr", 

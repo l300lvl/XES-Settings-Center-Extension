@@ -20,22 +20,7 @@ function init(extensionMeta)
     let current_version = Config.PACKAGE_VERSION.split('.');
     if (current_version.length > 4 || current_version[0] != 3) throw new Error("Strange version number (extension.js:21).");
     
-    switch (current_version[1]) {
-        case"4": age = "old";
-        break;
-        case"5": global.log("Warning of extension [" + metadata.uuid + "]:\n              Development release detected (" + Config.PACKAGE_VERSION + "). Loading as a 3.6 release.\n"); //eak
-        case"6": age = "new";
-        case"8":  ;
-        break;
-        case"10": age = "new2"
-        case"12":  ;
-        case"14":  ;
-        case"15": global.log("Warning of extension [" + metadata.uuid + "]:\n              Development release detected (" + Config.PACKAGE_VERSION + "). Loading as a 3.16 release.\n"); //eak
-        case"16":  ;
-        break;
-        default: throw new Error("Strange version number (extension.js:36).");
-    }
-
+    age = "new2"
     if (age=="old")       userMenu = Main.panel._statusArea.userMenu;
     else if (age=="new")  userMenu = Main.panel.statusArea.userMenu;
     else                  userMenu = Main.panel.statusArea.aggregateMenu;
